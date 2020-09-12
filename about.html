@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/stylevid.css">
+
+<link href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<meta ="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> Think green</title>
+</head>
+
+
+<body>
+<header>
+<h1>  <i class="fas fa-leaf" style="color:#64C509;"></i>
+ THINK GREEN </h1>
+</header>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Facts
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+       <a href="tgreen.html">Think Green</a>
+      <a href="history.html">History</a>
+      <a href="projects.html">Project</a>
+      <a href="mission.html">Mission and Vision</a>
+    </div>
+  </div> 
+  <a href="about.html" class="active">About</a>
+  <div class="dropdown">
+    <button class="dropbtn">Members 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="team.html">Our boards and staff</a>
+      <a href="partners.html">Our Partners</a>
+      <a href="volunteers.html">Volunteers</a>
+    </div>
+  </div> 
+  <a href="gallery.html">Image Gallery</a>
+  <a href="calendar.html">Events Calender</a>
+  <a href="careers.html">Careers</a>
+  <a href="FAQ.html">FAQ</a>
+  <a href="refrences.html">Refrences</a>
+  
+  
+  
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } 
+  else {
+    x.className = "topnav";
+  }
+}
+</script>
+    <center>
+  <form name="marquee1">
+  <input name="text" size=40 style="width:100%; height: 45px; background-color:#64C509; color:white; font-size:20px;" 
+  Value="Uplifting communities through environmental projects by thinking Green!  Uplifting communities through environmental projects by thinking Green! Uplifting communities through environmental projects by thinking Green! &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ">
+  
+</form>
+
+</center>
+  <script >
+
+  ScrollSpeed = 120
+  ScrollChars = 1
+  function ScrollMarquee() {
+    window.setTimeout('ScrollMarquee()',ScrollSpeed);
+
+
+  var msg = document.marquee1.text.value;
+  document.marquee1.text.value = 
+  msg.substring(ScrollChars) +
+  msg.substring(0,ScrollChars);
+}
+   ScrollMarquee()
+</script>
+
+
+   
+
+ </form>
+
+
+<img src="images/green.jpg" style="width:100%;height:300px;">
+
+</header>
+
+<center>
+<div class="video">
+  <p>
+  <video width="320" height="240" controls autoplay id="player">
+  <source src="images/vid1.mp4" type="video/mp4">
+  Your browser does not support the HTML5 video element.    
+</video>
+</p>
+<p>
+  <audio controls autoplay>
+    <source src="images/aud1.mp3" type="audio/mp3">
+    <source src="images/aud1.ogg" type="audio/ogg">
+    Your browser does not support the audio element. </audio>
+</p>
+</div>
+</center>
+
+	<section>
+
+  
+    <div class="circle circle1">
+      <img src="images/new2.png">
+    </div>
+		<div>
+		<h2> About US! </h2>
+		<p>Thinking green has plenty of going for it: You are helping the planet, you spare yourself cash,
+		you wind up more beneficial, and you feel better about yourself by basically becoming environmentally
+		friendly!In the event that you need to proceed with the adventure toward being green, read on!
+		Green thinking means following practices that can lead to actions and lifestyles to be more 
+		environmentally friendly, which in turn helps to preserve the environmentsurrounding its natural 
+		resources for future and current generations.</p>
+		
+		</div>
+		
+	</section>
+
+	<br>
+	<hr>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+<footer>
+	
+
+<p>Follow us on:</p>
+<p>
+		
+			<a href="#" class="fab fa-facebook"></a>
+			<a href="#" class="fab fa-twitter"></a>
+			<a href="#" class="fab fa-google"></a>
+			<a href="#" class="fab fa-linkedin"></a>
+			<a href="#" class="fab fa-youtube"></a>
+			<a href="#" class="fab fa-instagram"></a>
+			
+		</P>
+		<p>Developed by Anisha &copy; 2019</p>
+
+</footer>
+</body>
+</html>

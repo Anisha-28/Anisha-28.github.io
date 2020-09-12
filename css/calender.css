@@ -1,0 +1,219 @@
+#main{
+	position: relative;
+	height: 450px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 455px;
+	background: #352b48;
+}
+
+.calendar {
+	
+	position: relative;
+	float: right;
+	margin: 5px;
+	background: #fff;
+	width: 100%;
+	height: 450px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 2px solid #ccc;
+	box-shadow: 0 15px 35px rgba(0 0 0 .5);
+}
+.calendar .date {
+	width: 400px;
+	padding: 30px;
+	box-sizing: border-box;
+}
+.calendar .date h3 {
+	margin: 0 0 20px;
+	padding: 0;
+	font-size: 24px;
+	font-weight: 500;
+	text-align: center;
+	
+}
+.calendar .date .days {
+	display: flex;
+	flex-wrap: wrap;
+}
+.calendar .date .days .day,
+.calendar .date .days .number {
+	width: 48px;
+	height: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.calendar .date .days .day:hover,
+.calendar .date .days .number:hover{
+	transform: perspective(5px)  translate(5px, -5px);
+	box-shadow: -5px 5px 1px rgba( 0,0,0,.5);
+	background: #352b48;
+	
+	color: #fff;
+	cursor: pointer;
+	border-radius: 50%;
+}
+.calendar .date .days #active{
+	background: #352b48;
+	color: #fff;
+	border-radius: 50%;
+	
+}
+.calendar .date .days .day:first-child,
+.calendar .date .days .number:nth-child(7n+1){
+	color: #f44336;
+	font-weight: 600;
+}
+.calendar .image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1170px;
+	height: 100%;
+	background: #000;
+}
+.calendar .image img {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  font-family: Helvetica, sans-serif;
+  background-color: #352b48;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 8%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 80%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 8%;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+/* Place the container to the right */
+.right {
+  left: 8%;
+}
+
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+  
+  
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

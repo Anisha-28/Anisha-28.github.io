@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<link href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<meta ="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> Think green</title>
+<style>
+*{
+	box-sizing: border-box;
+}
+
+.menu {
+	float: left;
+	width: 20%;
+	background-color: black;
+}
+
+.menuitem {
+	border: none;
+	color: #f2f2f2;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 500ms ease; 
+}
+
+.menuitem:before {
+	content:'';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	height: 42px;
+	background: #42FF96;
+	border-radius: 5px;
+	transition: all 2s ease;
+} 
+
+
+a {text-decoration:none
+   color:#FFFFFF}
+
+
+.main {
+	float: left;
+	width: 60%;
+	padding: 0 20px;
+	overflow: hidden;
+}
+.right {
+	background-color: #42FF96;
+	float: left;
+	width: 20%;
+	padding: 10px 15px;
+	margin-top: 7px;
+}
+</style>
+</head>
+
+
+<body>
+<header>
+<h1>  <i class="fas fa-leaf" style="color:#64C509;"></i>
+Think green</h1>
+</header>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+   <button class="dropbtn">Facts
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+       <a href="tgreen.html">Think Green</a>
+      <a href="history.html">History</a>
+      <a href="projects.html">Project</a>
+      <a href="mission.html">Mission and Vision</a>
+    </div>
+  </div> 
+  <a href="about.html">About</a>
+  <div class="dropdown">
+    <button class="dropbtn">Members 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="team.html">Our boards and staff</a>
+      <a href="partners.html">Our Partners</a>
+      <a href="volunteers.html">Volunteers</a>
+    </div>
+  </div> 
+  <a href="gallery.html">Image Gallery</a>
+  <a href="calendar.html">Events Calender</a>
+  <a href="careers.html">Careers</a>
+  <a href="FAQ.html">FAQ</a>
+   <a href="refrences.html">Refrences</a>
+  
+  
+  
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } 
+  else {
+    x.className = "topnav";
+  }
+}
+</script>
+    <center>
+  <form name="marquee1">
+  <input name="text" size=40 style="width:100%; height: 45px; background-color:#64C509; color:white; font-size:20px;" 
+  Value="Uplifting communities through environmental projects by thinking Green!  Uplifting communities through environmental projects by thinking Green! Uplifting communities through environmental projects by thinking Green! &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ">
+  
+</form>
+
+</center>
+  <script >
+
+  ScrollSpeed = 120
+  ScrollChars = 1
+  function ScrollMarquee() {
+    window.setTimeout('ScrollMarquee()',ScrollSpeed);
+
+
+  var msg = document.marquee1.text.value;
+  document.marquee1.text.value = 
+  msg.substring(ScrollChars) +
+  msg.substring(0,ScrollChars);
+}
+   ScrollMarquee()
+</script>
+
+
+   
+
+ </form>
+
+
+<img src="images/green.jpg" style="width:100%;height:300px;">
+
+</header>
+<br>
+<br>
+<center><b><h1>PROJECTS</b></h1></center>
+<br>
+<br>
+
+<div style="overflow:auto">
+<div class="menu">
+<div class="menuitem">PLANTING MILLION TREE'S</div>
+<div class="menuitem">AWARENESS FOR PLANTING A TREE</div>
+<div class="menuitem">SUSTANIABLE AGRICULTURAL</div>
+
+</div>
+
+
+<div class="main">
+<h2>Think Green! DO GREEN! GO GREEN!</h2>
+<img src="images/plant.jpg" style="width:100%">
+</div>
+
+<div class="right">
+
+<h2>PLANTING MILLION TREE'S</h2>
+
+<p>Join us for the ultimate local event and a morning of movement, with amazing food and incredible views.
+        We wil plant 50000 milion tree accross the world with the help of our volunteers throughout the world.</p> 
+
+
+<h2>AWARENESS FOR PLANTING A TREE</h2>
+
+<p>We arrange small sessions in different part of the country in order to give awareness for planting a tree.We will setup up different teams to go any make aware the people to plant a tree and how important it is for us and for our future generations. .</p> 
+	 
+<h2>SUSTANIABLE AGRICULTURAL</h2>
+
+<p>  Think Green organizes Farmer Field Schools which help provide instruction in basic sustainable techniques and encourage experimentation. Farmers take an active role in improving their agriculture, making change both environmentally and culturally sustainable as they prepare for eventual graduation.                         </p> 
+	  
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+
+<p>Follow us on:</p>
+<p>
+		
+			<a href="#" class="fab fa-facebook"></a>
+			<a href="#" class="fab fa-twitter"></a>
+			<a href="#" class="fab fa-google"></a>
+			<a href="#" class="fab fa-linkedin"></a>
+			<a href="#" class="fab fa-youtube"></a>
+			<a href="#" class="fab fa-instagram"></a>
+			
+		</P>
+		<p>Developed by Anisha &copy; 2019</p>
+
+
+
+</footer>
+
+
+
+
+</body>
+</html>
+   

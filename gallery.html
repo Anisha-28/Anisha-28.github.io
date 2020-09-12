@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<link href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<meta ="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> Think green</title>
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+
+img {vertical-align: middle;
+	width: 100%;
+	height:100%;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 2px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 4s ease;
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.5} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.5} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+</head>
+
+
+<body>
+<header>
+<h1>  <i class="fas fa-leaf" style="color:#64C509;"></i>
+ THINK GREEN </h1>
+</header>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Facts
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+       <a href="tgreen.html">Think Green</a>
+      <a href="history.html">History</a>
+      <a href="projects.html">Project</a>
+      <a href="mission.html">Mission and Vision</a>
+    </div>
+  </div> 
+  <a href="about.html">About</a>
+  <div class="dropdown">
+    <button class="dropbtn">Members 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="team.html">Our boards and staff</a>
+      <a href="partners.html">Our Partners</a>
+      <a href="volunteers.html">Volunteers</a>
+    </div>
+  </div> 
+  <a href="gallery.html" class="active">Image Gallery</a>
+  <a href="calendar.html">Events Calender</a>
+  <a href="careers.html">Careers</a>
+  <a href="FAQ.html">FAQ</a>
+   <a href="refrences.html">Refrences</a>
+  
+  
+  
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } 
+  else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<center>
+  <form name="marquee1">
+  <input name="text" size=40 style="width:100%; height: 45px; background-color:#64C509; color:white; font-size:20px;" 
+  Value="Uplifting communities through environmental projects by thinking Green!  Uplifting communities through environmental projects by thinking Green! Uplifting communities through environmental projects by thinking Green! &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ">
+  
+</form>
+
+</center>
+  <script >
+
+  ScrollSpeed = 120
+  ScrollChars = 1
+  function ScrollMarquee() {
+    window.setTimeout('ScrollMarquee()',ScrollSpeed);
+
+
+  var msg = document.marquee1.text.value;
+  document.marquee1.text.value = 
+  msg.substring(ScrollChars) +
+  msg.substring(0,ScrollChars);
+}
+   ScrollMarquee()
+</script>
+
+
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 2</div>
+  <img src="images/gal11.jpg">
+  <div class="text">Source. Lead the scene and keep it green.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 2</div>
+  <img src="images/gal12.jpg">
+  <div class="text">Keep green and keep our planet clean.
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 2</div>
+   <img src="images/gal13.jpg">
+  <div class="text">Take a stand for the love of green.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 2</div>
+   <img src="images/gal14.jpg">
+  <div class="text">Don't be mean, just go green.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 2</div>
+   <img src="images/gal15.jpg">
+  <div class="text">Get into the green scene.</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>   
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 3 seconds
+}
+</script>
+
+
+
+<footer>
+	
+
+<p>Follow us on:</p>
+<p>
+		
+			<a href="#" class="fab fa-facebook"></a>
+			<a href="#" class="fab fa-twitter"></a>
+			<a href="#" class="fab fa-google"></a>
+			<a href="#" class="fab fa-linkedin"></a>
+			<a href="#" class="fab fa-youtube"></a>
+			<a href="#" class="fab fa-instagram"></a>
+			
+		</P>
+		<p>Developed by Anisha &copy; 2019</p>
+
+</footer>
+
+
+
+
+
+
+</body>
+</html>

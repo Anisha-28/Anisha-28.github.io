@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<link href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+<meta ="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> Think green</title>
+</head>
+
+
+<body>
+<header>
+<h1>  <i class="fas fa-leaf" style="color:#64C509;"></i>
+ Think green</h1>
+</header>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <div class="dropdown">
+   <button class="dropbtn">Facts
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+       <a href="tgreen.html">Think Green</a>
+      <a href="history.html">History</a>
+      <a href="projects.html">Project</a>
+      <a href="mission.html">Mission and Vision</a>
+    </div>
+  </div> 
+  <a href="about.html">About</a>
+  <div class="dropdown">
+    <button class="dropbtn">Members 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="team.html">Our boards and staff</a>
+      <a href="partners.html">Our Partners</a>
+      <a href="volunteers.html">Volunteers</a>
+    </div>
+  </div> 
+  <a href="gallery.html">Image Gallery</a>
+  <a href="calendar.html">Events Calender</a>
+  <a href="careers.html">Careers</a>
+  <a href="FAQ.html">FAQ</a>
+   <a href="refrences.html" class="active">Refrences</a>
+  
+  
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } 
+  else {
+    x.className = "topnav";
+  }
+}
+</script>
+    <center>
+  <form name="marquee1">
+  <input name="text" size=40 style="width:100%; height: 45px; background-color:#64C509; color:white; font-size:20px;" 
+  Value="Uplifting communities through environmental projects by thinking Green!  Uplifting communities through environmental projects by thinking Green! Uplifting communities through environmental projects by thinking Green! &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ">
+  
+</form>
+
+</center>
+  <script >
+
+  ScrollSpeed = 120
+  ScrollChars = 1
+  function ScrollMarquee() {
+    window.setTimeout('ScrollMarquee()',ScrollSpeed);
+
+
+  var msg = document.marquee1.text.value;
+  document.marquee1.text.value = 
+  msg.substring(ScrollChars) +
+  msg.substring(0,ScrollChars);
+}
+   ScrollMarquee()
+</script>
+
+
+   
+
+ </form>
+
+
+<img src="images/green.jpg" style="width:100%;height:300px;">
+
+</header>
+<div class="refrence" >
+<a>Color.adobe.com. (2019). Color. [online] Available at: https://color.adobe.com/create [Accessed 14May 2019].</a><br><br>
+<a>Westernaustralia.com. (2019). Holiday deals - Tourism Western Australia. [online] Available at: https://www.westernaustralia.com/us/plan_your_trip/pages/holiday-deals.aspx#/ [Accessed 13 May 2019]..</a><br><br>
+<a>Systrends.com. (2019). About Systrends | Systrends. [online] Available at: https://www.systrends.com/content/about-systrends [Accessed 22 May 2019].</a><br><br>
+<a>Wildfly Travel. (2019). Press Room - Wildfly Travel. [online] Available at: http://wildflytravel.com/press-room/ [Accessed 2 May 2019].</a><br><br>
+<a>Anon, (2019). [online] Available at: https://au.linkedin.com/company/allianzpartnersaustralia [Accessed 22 May 2019].</a><br><br>
+<a>Estours Travel. (2019). About Us - Estours Travel. [online] Available at: https://www.estours-travel.com.au/us/ [Accessed 7 May 2019].</a><br><br>
+<a>Google Fonts. (2019). Google Fonts. [online] Available at: https://fonts.google.com/ [Accessed 28 April 2019].</a><br><br>
+<a>Fontawesome.com. (2019). Font Awesome 5. [online] Available at: https://fontawesome.com/ [Accessed 28 Apr. 2019].</a><br><br>
+<a>Biznet Professional Translation & Interpreting. (2019). testimonials-banner (1) – Biznet Professional Translation & Interpreting. [online] Available at: https://www.biznetserv.com/wordpress/index.php/en/our-customers/testimonials-banner-1/ [Accessed 22 May 2019].</a><br><br>
+<a>Gocollette.com. (2019). [online] Available at: https://www.gocollette.com/en-au/offers [Accessed 22 May 2019].</a><br><br>
+</div>
+
+
+<footer>
+	
+
+<p>Follow us on:</p>
+<p>
+		
+			<a href="#" class="fab fa-facebook"></a>
+			<a href="#" class="fab fa-twitter"></a>
+			<a href="#" class="fab fa-google"></a>
+			<a href="#" class="fab fa-linkedin"></a>
+			<a href="#" class="fab fa-youtube"></a>
+			<a href="#" class="fab fa-instagram"></a>
+			
+		</P>
+		<p>Developed by Anisha &copy; 2019</p>
+
+</footer>
+
+
+
+
+
+
+</body>
+</html>

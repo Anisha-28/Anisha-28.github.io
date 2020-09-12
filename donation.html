@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/donationn.css">
+
+
+<link href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<meta ="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> Think green</title>
+</head>
+
+
+<body>
+<header>
+<h1>  <i class="fas fa-leaf" style="color:#64C509;"></i>
+ THINK GREEN </h1>
+</header>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Facts
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+       <a href="tgreen.html">Think Green</a>
+      <a href="history.html">History</a>
+      <a href="projects.html">Project</a>
+      <a href="mission.html">Mission and Vision</a>
+    </div>
+  </div> 
+  <a href="about.html">About</a>
+  <div class="dropdown">
+    <button class="dropbtn">Members 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="team.html">Our boards and staff</a>
+      <a href="partners.html">Our Partners</a>
+      <a href="volunteers.html">Volunteers</a>
+    </div>
+  </div> 
+  <a href="gallery.html">Image Gallery</a>
+  <a href="calendar.html">Events Calender</a>
+  <a href="careers.html">Careers</a>
+  <a href="FAQ.html">FAQ</a>
+   <a href="refrences.html">Refrences</a>
+  
+  
+  
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } 
+  else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<img src="images/green.jpg" style="width:100%;height:300px;">
+
+    <center>
+  <form name="marquee1">
+  <input name="text" size=40 style="width:70%; height: 45px; background-color:#64C509; color:white; font-size:20px;" 
+  Value="Make a Difference,  Donate Now!! Make a Difference,  Donate Now!! Make a Difference,  Donate Now!! ">
+  
+</form>
+</center>
+
+  <script >
+
+  ScrollSpeed = 120
+  ScrollChars = 1
+  function ScrollMarquee() {
+    window.setTimeout('ScrollMarquee()',ScrollSpeed);
+
+
+  var msg = document.marquee1.text.value;
+  document.marquee1.text.value = 
+  msg.substring(ScrollChars) +
+  msg.substring(0,ScrollChars);
+}
+   ScrollMarquee()
+</script>
+
+
+   
+
+ </form>
+
+<div class="main">
+ <div class="container">
+  <form action="action_page.php">
+
+
+        <h2> <center> Contact Information </center> </h2>
+        <label for="title">Title</label>
+    <select id="country" name="country">
+      <option value="Miss">Miss</option>
+      <option value="Mr">Mr</option>
+      <option value="Mrs.">Mrs</option>
+
+        </select>  
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="First name">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Last name">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="random@random.com">
+
+      <h2> <center> Billing Address </center> </h2>
+
+       <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="india">India</option>
+      <option value="pakistan">Pakistan</option>
+
+        </select>  
+
+    <label for="address">Address</label>
+         <textarea id="subject" name="address" placeholder="Write your address" style='height: 50px'> </textarea>
+        </select>  
+
+    <div>
+        <p> Choose your donation amount : </p>
+        
+        <button class="amount" type="button"style="background-color:#C2C2C2">$10</button>
+        <button class="amount" type="button"style="background-color:#C2C2C2">$15</button>
+        <button class="amount" type="button" style="background-color:#C2C2C2">$20</button>
+        <button class="amount" type="button"style="background-color:#C2C2C2">$50</button>
+        <button class="amount" type="button" style="background-color:#C2C2C2">$100</button>
+     
+
+        <div>
+          <label for="otheramount"><br>Other Amount :</label><br>
+          <input type="number" id="amount1" name="other amount" placeholder="Other Amount..">        
+        </div>
+
+
+    </div>
+     
+         <label for="subject"><br>Donated Towards : </label>
+         <textarea id="subject" name="subject" placeholder="Write something.." style='height: 50px'> </textarea>
+        </select>
+
+         <div class='form-row'>
+          <label class='checkbox-label' for='available'>
+            <input id='available'
+             name='available'
+             type='checkbox'
+             value='is-available'>
+           
+    <span> Yes, I would like to be notified for the further projects and any donation required. </span>  
+
+  </div>
+ <div class='form-row'> <br>
+          <label class='checkbox-label' for='available'>
+            <input id='available'
+             name='available'
+             type='checkbox'
+             value='is-available'
+               <span> I prefer that this donation remains anonymous. </span>
+  </label>
+
+</div>
+<p>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</p>
+</form>
+</div>
+</div>
+
+<footer>
+
+  
+
+<h2>Follow us on:</h2>
+    
+      <a href="#" class="fab fa-facebook"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-google"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+      <a href="#" class="fab fa-youtube"></a>
+      <a href="#" class="fab fa-instagram"></a>
+      
+    <p>Developed by Pro Group &copy; 2019</p>
+
+</footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/form.css">
+
+<link href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<meta ="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> Think green</title>
+
+
+</head>
+
+
+<body>
+<header>
+<h1>  <i class="fas fa-leaf" style="color:#64C509;"></i>
+ THINK GREEN </h1>
+</header>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Facts
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+       <a href="tgreen.html">Think Green</a>
+      <a href="history.html">History</a>
+      <a href="projects.html">Project</a>
+      <a href="mission.html">Mission and Vision</a>
+    </div>
+  </div> 
+  <a href="about.html">About</a>
+  <div class="dropdown">
+    <button class="dropbtn">Members 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="team.html">Our boards and staff</a>
+      <a href="partners.html">Our Partners</a>
+      <a href="volunteers.html">Volunteers</a>
+    </div>
+  </div> 
+  <a href="gallery.html">Image Gallery</a>
+  <a href="calendar.html">Events Calender</a>
+  <a href="careers.html">Careers</a>
+  <a href="FAQ.html">FAQ</a>
+   <a href="refrences.html">Refrences</a>
+  
+  
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } 
+  else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<center>
+  <form name="marquee1">
+  <input name="text" size=40 style="width:100%; height: 45px; background-color:#64C509; color:white; font-size:20px;" 
+  Value="Uplifting communities through environmental projects by thinking Green!  Uplifting communities through environmental projects by thinking Green! Uplifting communities through environmental projects by thinking Green! &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ">
+  
+</form>
+
+</center>
+  <script >
+
+  ScrollSpeed = 120
+  ScrollChars = 1
+  function ScrollMarquee() {
+    window.setTimeout('ScrollMarquee()',ScrollSpeed);
+
+
+  var msg = document.marquee1.text.value;
+  document.marquee1.text.value = 
+  msg.substring(ScrollChars) +
+  msg.substring(0,ScrollChars);
+}
+   ScrollMarquee()
+</script>
+
+
+
+<img src="images/shop.jpg" style="width:100%;height:300px;">
+
+<div class="main">
+ <div class="container">
+ 	<form action="action_page.php">
+		<select name="station">
+		<option>Mr.</option>
+		<option>Miss</option>
+		<option>Mrs</option>
+	
+		</select>
+		
+ 		<label for="fname"><i class="fa fa-user"></i> Full Name</label>
+ 		<input type="text" id="fname" name="firstname" placeholder="Your Full Name.." autofocus required>
+
+ 		<label for="email"><i class="fa fa-envelope"></i> Email</label>
+ 		<input type="text" id="email" name="email" placeholder="joe@example.com">
+
+ 		<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+        <input type="text" id="adr" name="address" placeholder="350 Queen Street.." required>
+
+ 		<label for="country">Country</label>
+ 		<select id="country" name="country">
+ 			<option value="australia">Australia</option>
+ 			<option value="canada">Canada</option>
+ 			<option value="usa">USA</option>
+		</select> 	
+		
+		<label for="city"><i class="fa fa-institution"></i> City</label>
+        <input type="text" id="city" name="city" placeholder="Melbourne">
+		
+		<label for="state">State</label>
+ 		<select id="state" name="state">
+ 			<option value="VIC">VIC</option>
+ 			<option value="NSW">NSW</option>
+ 			<option value="ACT">ACT</option>
+			<option value="TAS">TAS</option>
+			<option value="WA">WA</option>
+			<option value="SA">SA</option>
+			<option value="Queensland">Queensland</option>
+		</select> 
+		
+		<label for="zip">Zip</label>
+        <input type="text" id="zip" name="zip" placeholder="3000" required>
+		
+		<hr>
+		<br>
+		
+		<h3>Payment</h3>
+        <label for="fname">Accepted Cards</label>
+          <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+           </div>
+		   
+		<label for="cname">Name on Card</label>
+        <input type="text" id="cname" name="cardname" placeholder="Miss Anisha .." required>
+            
+		<label for="ccnum">Credit card number</label>
+		<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+            
+		<label for="expmonth">Exp Month</label>
+        <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+		
+		<label for="expyear">Exp Year</label>
+        <input type="text" id="expyear" name="expyear" placeholder="2027" required>
+		
+		<label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" placeholder="352" required>
+		
+		<label>
+        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing</label>
+        
+		<p>
+		<input type="submit" value="Continue to Checkout">
+		<input type="reset" value="Reset">
+		</p>
+</form>
+</div>
+</div>
+
+<footer>
+	
+
+<p>Follow us on:</p>
+<p>
+		
+			<a href="#" class="fab fa-facebook"></a>
+			<a href="#" class="fab fa-twitter"></a>
+			<a href="#" class="fab fa-google"></a>
+			<a href="#" class="fab fa-linkedin"></a>
+			<a href="#" class="fab fa-youtube"></a>
+			<a href="#" class="fab fa-instagram"></a>
+			
+		</P>
+		<p>Developed by Anisha &copy; 2019</p>
+
+</footer>
+
+
+
+
+
+
+</body>
+</html>

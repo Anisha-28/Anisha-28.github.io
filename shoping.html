@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<link href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<meta ="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> Think green</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 25%;
+  padding: 50px;
+  height: 500px;
+  border: 0.5px solid #bbb;
+}
+
+.shopping::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  object-fit:cover;
+  
+}
+
+.button:hover {
+  background-color: #555;
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .shopping {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:800px) {
+  /* For mobile phones: */
+  .topnav, .shopping, .box {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+
+<body>
+<header>
+<h1>  <i class="fas fa-leaf" style="color:#64C509;"></i>
+ THINK GREEN </h1>
+</header>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Facts 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+       <a href="tgreen.html">Think Green</a>
+      <a href="history.html">History</a>
+      <a href="projects.html">Project</a>
+      <a href="mission.html">Mission and Vision</a>
+    </div>
+  </div> 
+  <a href="about.html">About</a>
+  <div class="dropdown">
+    <button class="dropbtn">Members 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="team.html">Our boards and staff</a>
+      <a href="calendar.html">Our Partners</a>
+      <a href="volunteers.html">Volunteers</a>
+    </div>
+  </div> 
+  <a href="gallery.html">Image Gallery</a>
+  <a href="calender.html">Events Calender</a>
+  <a href="careers.html">Careers</a>
+  <a href="FAQ.html">FAQ</a>
+   <a href="refrences.html">Refrences</a>
+  
+  
+  
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } 
+  else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<center>
+  <form name="marquee1">
+  <input name="text" size=40 style="width:100%; height: 45px; background-color:#64C509; color:white; font-size:20px;" 
+  Value="Uplifting communities through environmental projects by thinking Green!  Uplifting communities through environmental projects by thinking Green! Uplifting communities through environmental projects by thinking Green! &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ">
+  
+</form>
+
+</center>
+  <script >
+
+  ScrollSpeed = 120
+  ScrollChars = 1
+  function ScrollMarquee() {
+    window.setTimeout('ScrollMarquee()',ScrollSpeed);
+
+
+  var msg = document.marquee1.text.value;
+  document.marquee1.text.value = 
+  msg.substring(ScrollChars) +
+  msg.substring(0,ScrollChars);
+}
+   ScrollMarquee()
+</script>
+
+
+
+<img src="images/shop.jpg" style="width:100%;height:300px;">
+
+
+
+
+
+<div class="shopping">
+  <div class="box" style="background-color:white">
+  <img src="images/shirt.png">
+  <p>Think green T-shirt</p>
+  <p>price. $25.0</p>
+  <a href="checkout.html"><button class="button">Buy Now!</button></a>
+  </div>
+  <div class="box" style="background-color:white">
+  <img src="images/bag.jpg">
+  <p>The Green Bag</p>
+  <p>price. $30.0</p>
+  <a href="checkout.html"><button class="button">Buy Now!</button></a>  
+  </div>
+  <div class="box" style="background-color: white">
+  <img src="images/shrgel.png" style="height:300px">
+  <p>Natural Fruit Sensational<br>Shower Gel</p>
+  <p>price. $23.50</p>
+  <a href="checkout.html"><button class="button">Buy Now!</button></a>  
+  </div>
+  <div class="box" style="background-color:white">
+  <img src="images/cream.png" style="height:300px">
+  <p>Natural Honey Cold Cream</p>
+  <p>price. $35.0</p>
+  <a href="checkout.html"><button class="button">Buy Now!</button></a>
+  </div>
+  <div class="box" style="background-color:white">
+  <img src="images/cream2.png">
+  <p>Paula's Choice cleansing gel</p>
+  <p>price. $40.0</p>
+  <a href="checkout.html"><button class="button">Buy Now!</button></a>
+  </div>
+  <div class="box" style="background-color:white">
+  <img src="images/speaker.png">
+  <p>Bluetooth Speaker with<br>LED indicator</p>
+  <p>price. $75.50</p>
+  <a href="checkout.html"><button class="button">Buy Now!</button></a>
+  </div>
+  <div class="box" style="background-color:white">
+  <img src="images/fitbit.png">
+  <p>New 2019 Fitbit<br>Heart Rate Calculator</p>
+  <p>price. $179.99</p>
+  <a href="checkout.html"><button class="button">Buy Now!</button></a>
+  </div>
+  <div class="box" style="background-color:white">
+  <img src="images/machine.png">
+  <p>National Washing Machine<br>Best for you Cloths</p>
+  <p>price. $459.0</p>
+  <a href="checkout.html"><button class="button">Buy Now!</button></a>
+  </div>
+  <div class="box" style="background-color:white">
+  <img src="images/foundation.png">
+  <p>Milani 2 in 1<br>Foundation + Concealer</p>
+  <p>price. $85.0</p>
+  <a href="checkout.html"><button class="button">Buy Now!</button></a>
+  </div>
+  <div class="box" style="background-color:white">
+  <img src="images/oil.png">
+  <p>Certified Organic Rosehip Oil</p>
+  <p>price. $45.0</p>
+  <a href="checkout.html"><button class="button">Buy Now!</button></a>
+  </div>
+  <div class="box" style="background-color:white">
+  <img src="images/olive.png">
+  <p>Olive Leaf Extract<br>Freshly Picked</p>
+  <p>price. $60.0</p>
+  <a href="checkout.html"><button class="button">Buy Now!</button></a>
+  </div>
+  <div class="box" style="background-color:white">
+  <img src="images/honey.png">
+  <p>Nature Bee Honey<br>Direct Trom The Bee Hives</p>
+  <p>price. $25.0</p>
+  <a href="checkout.html"><button class="button">Buy Now!</button></a>
+  </div>
+  
+</div>
+
+
+<footer>
+	
+
+<p>Follow us on:</p>
+<p>
+		
+			<a href="#" class="fab fa-facebook"></a>
+			<a href="#" class="fab fa-twitter"></a>
+			<a href="#" class="fab fa-google"></a>
+			<a href="#" class="fab fa-linkedin"></a>
+			<a href="#" class="fab fa-youtube"></a>
+			<a href="#" class="fab fa-instagram"></a>
+			
+		</P>
+		<p>Developed by Anisha &copy; 2019</p>
+
+</footer>
+
+
+
+
+
+
+</body>
+</html>

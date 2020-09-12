@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/calender.css">
+
+
+
+<link href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<meta ="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> Think green</title>
+</head>
+
+
+<body>
+<header>
+<h1>  <i class="fas fa-leaf" style="color:#64C509;"></i>
+ THINK GREEN </h1>
+</header>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html:" class="active">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Facts 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+       <a href="tgreen.html">Think Green</a>
+      <a href="history.html">History</a>
+      <a href="projects.html">Project</a>
+      <a href="mission.html">Mission and Vision</a>
+    </div>
+  </div> 
+  <a href="about.html">About</a>
+  <div class="dropdown">
+    <button class="dropbtn">Members 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="team.html">Our boards and staff</a>
+      <a href="partners.html">Our Partners</a>
+      <a href="volunteers.html">Volunteers</a>
+    </div>
+  </div> 
+  <a href="gallery.html">Image Gallery</a>
+  <a href="calendar.html">Events Calender</a>
+  <a href="careers.html">Careers</a>
+  <a href="FAQ.html">FAQ</a>
+   <a href="refrences.html">Refrences</a>
+  
+  
+  
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } 
+  else {
+    x.className = "topnav";
+  }
+}
+</script>
+<center>
+  <form name="marquee1">
+  <input name="text" size=40 style="width:100%; height: 45px; background-color:#64C509; color:white; font-size:20px;" 
+  Value="Uplifting communities through environmental projects by thinking Green!  Uplifting communities through environmental projects by thinking Green! Uplifting communities through environmental projects by thinking Green! &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ">
+  
+</form>
+
+</center>
+  <script >
+
+  ScrollSpeed = 120
+  ScrollChars = 1
+  function ScrollMarquee() {
+    window.setTimeout('ScrollMarquee()',ScrollSpeed);
+
+
+  var msg = document.marquee1.text.value;
+  document.marquee1.text.value = 
+  msg.substring(ScrollChars) +
+  msg.substring(0,ScrollChars);
+}
+   ScrollMarquee()
+</script>
+
+
+<img src="images/green.jpg" style="width:100%;height:300px;">
+
+
+<div class="timeline">
+  <div class="container right">
+    <div class="content">
+      <h2>Web Developer</h2>
+    <h3><i class="far fa-clock"></i> Full time </h3><br>
+    <h3><i class="fas fa-map-marker-alt"></i> Location: Keilor, VIC 3036</h3><br>
+      <p> Web Developer required for maintaining the website of the company, uploading the events and everything required in website.
+    <br><br> Experience of two years as web developer or similar position.</p> 
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>Accountant</h2>
+    <h3><i class="far fa-clock"></i> Full time </h3><br>
+    <h3><i class="fas fa-map-marker-alt"></i>Altona, Victoria 3078</h3><br>
+      <p> Accountant required for handling cash and making budgets for the donation we get, making proper accounting books to be revealed to the government on demand. 
+    <br><br> Experience of one year of making accounts of government owned company.</p> 
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2> Software Engineer</h2>
+    <h3><i class="far fa-clock"></i> Casual </h3><br>
+    <h3><i class="fas fa-map-marker-alt"></i> Head office, VIC 3000</h3><br>
+      <p> Software engineer required as casual basis, for an application development 
+    <br><br> Even the beginners can apply but terms and conditions apply.</p> 
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+<footer>
+	
+
+<p>Follow us on:</p>
+<p>
+		
+			<a href="#" class="fab fa-facebook"></a>
+			<a href="#" class="fab fa-twitter"></a>
+			<a href="#" class="fab fa-google"></a>
+			<a href="#" class="fab fa-linkedin"></a>
+			<a href="#" class="fab fa-youtube"></a>
+			<a href="#" class="fab fa-instagram"></a>
+			
+		</P>
+		<p>Developed by Anisha &copy; 2019</p>
+
+</footer>
+
+
+
+
+
+
+</body>
+</html>
